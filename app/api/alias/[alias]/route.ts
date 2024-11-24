@@ -16,8 +16,7 @@ export async function GET(request: Request, { params }: { params: { alias: strin
         } else {
             return NextResponse.json({ error: "Alias not found" }, { status: 404 });
         }
-    }  catch (error) {
-        console.error(error);
-        return NextResponse.json({ error: "Internal Server Error" }, { status: 500 });
+    }  catch {
+
     }
 }
