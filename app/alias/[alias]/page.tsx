@@ -16,8 +16,8 @@ export default function AliasRedirectPage({ params }: { params: { alias: string 
                 } else {
                     setError(data.error || "Unknown error occurred");
                 }
-            } catch (err) {
-                setError("Failed to fetch data");
+            } catch (error) {
+                console.log(error);
             }
         };
 
