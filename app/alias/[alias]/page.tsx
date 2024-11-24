@@ -16,8 +16,8 @@ export default function AliasRedirectPage({ params }: { params: { alias: string 
                 } else {
                     setError(data.error || "Unknown error occurred");
                 }
-            } catch (error) {
-                console.log(error);
+            } catch (err) {
+                console.error(err);
             }
         };
 
